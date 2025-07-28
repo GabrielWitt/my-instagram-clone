@@ -1,50 +1,33 @@
 # Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# React Native Instagram Clone
 
-## Get started
+Este proyecto es una réplica básica de la interfaz de Instagram, desarrollada con **React Native**, con el objetivo de demostrar habilidades en diseño de interfaces, manejo de estado, consumo de datos, navegación y estructura de componentes.
 
-1. Install dependencies
+## 🚀 Funcionalidades implementadas
 
-   ```bash
-   npm install
-   ```
+- Feed de publicaciones
+- Likes y comentarios simulados
+- Modal de opciones (guardar, remixar, secuencia)
+- Navegación estilo bottom tab
+- Mock de datos locales + consumo de API externa
+- Diseño responsivo y moderno
 
-2. Start the app
+## 🧠 Tecnologías usadas
 
-   ```bash
-   npx expo start
-   ```
+- React Native (Expo o CLI)
+- TypeScript
+- Zustand o Context API para estado
+- Axios
+- react-native-vector-icons
+- react-native-modal
 
-In the output, you'll find options to open the app in a
+## 📱 Capturas de pantalla
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+> *(Agrega aquí imágenes si tienes)*
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## 🛠 Cómo ejecutarlo
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npm install
+npx expo start
