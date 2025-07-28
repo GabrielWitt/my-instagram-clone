@@ -96,7 +96,7 @@ npm install
 Start development server:
 
 ```bash
-npx expo start
+npm run web     # Web preview
 ```
 
 To run in specific environments:
@@ -104,7 +104,6 @@ To run in specific environments:
 ```bash
 npm run ios     # iOS simulator
 npm run android # Android emulator
-npm run web     # Web preview
 ```
 
 If using `yarn`, replace `npm` with `yarn`.
