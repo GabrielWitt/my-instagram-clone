@@ -2,10 +2,13 @@
 import { Post } from '@/src/types/Post';
 import { Image } from 'expo-image';
 import { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, View } from 'react-native';
+import { ImageModal } from '../screens/postDetail';
 import { PostBottom } from './PostFooter';
 import { PostHeader } from './PostHeader';
 import { PostOptionsModal } from './PostOptionsModal';
+
+
 
 interface Props {
   post: Post;
@@ -22,6 +25,20 @@ export const PostCard = ({ post }: Props) => {
   const [liked, setLiked] = useState(post.liked);
   const [likesCount, setLikesCount] = useState(post.likes);
   const [saved, setSaved] = useState(post.saved);
+
+  // State to handle modal visibility for image preview
+  const [detailVisible, setDetailVisible] = useState(false);
+  const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
+
+  const openModal = (uri: string) => {
+    setSelectedPhoto(uri);
+    setDetailVisible(true);
+  };
+
+  const closeModal = () => {
+    setDetailVisible(false);
+    setSelectedPhoto(null);
+  };
 
   const toggleLike = () => {
     setLiked(!liked);
@@ -43,15 +60,19 @@ export const PostCard = ({ post }: Props) => {
       />
 
       {/* Image */}
-      <Image
-        source={
-          imageError
-            ? require('@/assets/images/brokenImage.png')
-            : { uri: post.image }
-        }
-        onError={() => setImageError(true)}
-        style={styles.image}
-      />
+      <TouchableOpacity onPress={() => openModal(imageError ? '@/assets/images/brokenImage.png' : post.image)}>
+        <Image
+          source={
+            imageError
+              ? require('@/assets/images/brokenImage.png')
+              : { uri: post.image }
+          }
+          onError={() => setImageError(true)}
+          style={styles.image}
+        />
+      </TouchableOpacity>
+
+
 
       {/* Footer */}
       <PostBottom
@@ -62,7 +83,13 @@ export const PostCard = ({ post }: Props) => {
         toggleLike={toggleLike}
         toggleSave={toggleSave}
       />
-
+      {/* Image Detail */}
+      <ImageModal
+        isVisible={detailVisible}
+        photoUri={selectedPhoto}
+        onClose={closeModal}
+      />
+      {/* Options Modal */}
       <PostOptionsModal
         isVisible={modalVisible}
         onClose={() => setModalVisible(false)}

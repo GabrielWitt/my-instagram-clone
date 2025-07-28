@@ -6,7 +6,7 @@ const API_URL = 'https://662029f13bf790e070af2cd8.mockapi.io/api/v1/posts';
 // Local items for development purposes
 const localPosts: Post[] = [
   {
-    id: '1',
+    id: '51',
     createdAt: '2024-06-04T11:45:23.000Z',
     name: 'Marcos Benítez',
     avatar: 'https://i.pravatar.cc/150?img=11',
@@ -19,7 +19,7 @@ const localPosts: Post[] = [
     location: 'Quito'
   },
   {
-    id: '2',
+    id: '52',
     createdAt: '2024-07-10T18:12:05.000Z',
     name: 'Luisa Fernández',
     avatar: 'https://i.pravatar.cc/150?img=35',
@@ -32,7 +32,7 @@ const localPosts: Post[] = [
     location: 'Medellín'
   },
   {
-    id: '3',
+    id: '53',
     createdAt: '2024-05-20T09:33:10.000Z',
     name: 'Samuel Andrade',
     avatar: 'https://i.pravatar.cc/150?img=58',
@@ -45,7 +45,7 @@ const localPosts: Post[] = [
     location: 'Lima'
   },
   {
-    id: '4',
+    id: '54',
     createdAt: '2024-07-01T22:14:45.000Z',
     name: 'Catalina Ríos',
     avatar: 'https://i.pravatar.cc/150?img=47',
@@ -58,7 +58,7 @@ const localPosts: Post[] = [
     location: 'Buenos Aires'
   },
   {
-    id: '5',
+    id: '55',
     createdAt: '2024-07-22T14:59:30.000Z',
     name: 'Esteban Molina',
     avatar: 'https://i.pravatar.cc/150?img=23',

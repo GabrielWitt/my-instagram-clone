@@ -1,4 +1,3 @@
-// src/screens/HomeScreen.tsx
 import { fetchPosts } from '@/src/api/postsApi';
 import { PostCard } from '@/src/components/PostCard';
 import { Post } from '@/src/types/Post';
@@ -32,16 +31,25 @@ export const HomeScreen = () => {
   }
 
   return (
-    <FlatList
-      data={posts}
-      keyExtractor={(item) => item.id}
-      renderItem={({ item }) => <PostCard post={item} />}
-      contentContainerStyle={styles.list}
-    />
+    <View style={styles.container}>
+      <FlatList
+        data={posts}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => <PostCard post={item} />}
+        contentContainerStyle={styles.list}
+      />
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignSelf: 'center',  // centra horizontalmente en web/desktop
+    width: '100%',
+    maxWidth: 420,         // ancho máximo ~ teléfono grande (por ejemplo, iPhone 13 Pro Max)
+    backgroundColor: '#000',
+  },
   center: {
     flex: 1,
     justifyContent: 'center',
@@ -49,6 +57,5 @@ const styles = StyleSheet.create({
   },
   list: {
     padding: 0,
-    backgroundColor: '#000'
   },
 });
