@@ -1,68 +1,73 @@
 # 📸 My Instagram Clone - React Native
 
-Este proyecto es una **réplica básica de Instagram** construida con **React Native**, con el propósito de demostrar mis habilidades en desarrollo móvil, diseño de interfaces y estructura de proyectos modernos.
+This project is a **basic Instagram clone** built with **React Native**, aimed to showcase my skills in mobile development, UI design, and modern project structure.
 
-## 🚀 Funcionalidades principales
+## 🚀 Main Features
 
-- 📷 Feed con publicaciones (mock + API)  
-- ❤️ Likes y comentarios simulados  
-- 💾 Guardar publicaciones  
-- 🎛 Modal de opciones con swipe  
-- 👤 Avatares y nombres dinámicos  
-- 🧭 Navegación tipo Bottom Tabs  
-- 🔍 Modal de imagen en pantalla completa con zoom y swipe para cerrar  
+- 📷 Feed with posts (mock data + API)  
+- ❤️ Simulated likes and comments  
+- 💾 Save posts functionality  
+- 🎛 Swipeable options modal  
+- 👤 Dynamic avatars and usernames  
+- 🧭 Bottom tab navigation  
+- 🔍 Fullscreen image modal with zoom and swipe-to-close  
 
-## 🌐 Soporte Web Responsivo
+## 🌐 Responsive Web Support
 
-- La pantalla principal (`HomeScreen`) está diseñada para que en pantallas grandes (como en navegador web o tablets) el contenido mantenga un **ancho máximo de 420px**, similar al tamaño de un teléfono móvil grande.  
-- Esto permite que la app se vea centrada y con proporciones reales en cualquier dispositivo, mejorando la experiencia de usuario y manteniendo coherencia visual.  
-- Se usa un contenedor con estilos responsivos para lograr esta adaptación sin afectar la experiencia en dispositivos móviles.
+- The main screen (`HomeScreen`) is designed so that on large screens (like web browsers or tablets) the content maintains a **maximum width of 420px**, similar to a large mobile phone.  
+- This allows the app to be centered and maintain realistic proportions on any device, enhancing user experience and visual consistency.  
+- A responsive container is used to achieve this adaptation without affecting the mobile experience.
 
-## 🖼 Capturas de pantalla
+## 🖼 Screenshots
 
-### 🏠 Pantalla principal (HomeScreen)  
+### 🏠 Main screen (HomeScreen)  
 ![Home Screen](./assets/screenshots/HomeScreen.png)
 
-### 🎛 Modal de opciones  
-![Modal de opciones](./assets/screenshots/OptionModal.png)
+### 🎛 Options modal  
+![Options Modal](./assets/screenshots/OptionModal.png)
 
-### 🔍 Vista detalle con zoom  
-![Detalle con zoom](./assets/screenshots/ZoomDetail.png)
+### 🔍 Detail view with zoom  
+![Zoom Detail](./assets/screenshots/ZoomDetail.png)
 
-## 🧰 Tecnologías utilizadas
+## 🧰 Technologies Used
 
 - React Native + TypeScript  
-- Zustand (manejo de estado)  
-- Axios (consumo de API)  
-- react-native-vector-icons (iconografía)  
-- react-native-modal (modales elegantes)  
-- react-native-image-zoom-viewer (zoom en imágenes)  
-- Faker (mock de datos realistas)  
+- Zustand (state management)  
+- Axios (API consumption)  
+- react-native-vector-icons (icons)  
+- react-native-modal (elegant modals)  
+- react-native-image-zoom-viewer (image zoom)  
+- Faker (realistic mock data)  
 
-## ▶️ Cómo ejecutar
+## ▶️ How to Run
 
 ```bash
 npm install
-npx expo start
+npm run web
 ```
 
-o si usas yarn:
+Or if you use yarn:
 
 ```bash
 yarn
 npx expo start
-npm run web
+```
 
-y si tienes disponible XCode
+If you have XCode available:
+
+```bash
 npm run ios
+```
 
-o si tienes disponible Android Studio
+Or if you have Android Studio available:
+
+```bash
 npm run android
 ```
 
-## 🎯 Objetivo
+## 🎯 Purpose
 
-Este proyecto fue creado como una muestra técnica de mis capacidades como desarrollador mobile front-end, enfocándome en buenas prácticas, componentes reutilizables, tipado con TypeScript y una interfaz visualmente atractiva.
+This project was created as a technical showcase of my mobile front-end development skills, focusing on best practices, reusable components, TypeScript typing, and a visually appealing interface.
 
 ## 👨‍💻 Autor
 
@@ -71,4 +76,4 @@ Este proyecto fue creado como una muestra técnica de mis capacidades como desar
 
 ---
 
-Gracias por visitar este repositorio 🙌
+Thanks for visiting this repository 🙌
